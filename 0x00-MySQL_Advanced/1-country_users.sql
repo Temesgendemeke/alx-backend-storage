@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email var(255) NOT NULL UNIQUE,
+  name VAR(255)
+  country ENUM('US', 'CO', 'TN') NOT NULL  DEFAULT 'US'
+)

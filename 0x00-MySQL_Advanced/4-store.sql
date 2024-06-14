@@ -4,5 +4,5 @@
 CREATE TRIGGER update_quantity_after_new_order
 AFTER INSERT ON order FOR EACH ROW
 UPDATE items
-SET quantity = OLD.quantity - NEW.number
+SET quantity = quantity - NEW.number
 WHERE name=NEW.item_name;

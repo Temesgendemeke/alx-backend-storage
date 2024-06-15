@@ -1,0 +1,2 @@
+// list all documents in the coolection school
+db.school.find().forEach(printjson);
